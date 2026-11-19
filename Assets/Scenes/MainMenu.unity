@@ -409,7 +409,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0.3
+            m_FloatArgument: 0.2
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -4772,6 +4772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769270837}
   - component: {fileID: 1769270838}
+  - component: {fileID: 1769270839}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -4815,6 +4816,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   window2: {fileID: 237601957}
+--- !u!114 &1769270839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769270836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ee1957ab2a651409ecf2cce52475b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 0.1
+  jigPosition: 1
+  positionJigAmount: {x: 3, y: 3, z: 0}
+  positionFrequency: 10
+  jigRotation: 1
+  rotationJigAmount: {x: 0, y: 0, z: 5}
+  rotationFrequency: 10
+  jigScale: 1
+  scaleJigAmount: {x: 0.3, y: 0.5, z: 0}
+  scaleFrequency: 4
 --- !u!1 &1915780175
 GameObject:
   m_ObjectHideFlags: 0

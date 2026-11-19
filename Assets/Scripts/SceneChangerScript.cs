@@ -26,21 +26,21 @@ public class SceneChangerScript : MonoBehaviour
                 UnityEditor.EditorApplication.isPlaying = false;
             else
             {
-                yield return fadeScript.FadeOut(0.5f);
+                yield return fadeScript.FadeOut(0.1f); // !!!
                 Application.Quit();
             }
 
         }
         else if (string.Equals(action, "play", StringComparison.OrdinalIgnoreCase))
         {
-            yield return fadeScript.FadeOut(0.5f);
+            yield return fadeScript.FadeOut(0.1f); //!!!
             saveLoadScript.SavePlayerData(charIndex, playerName, playerCount);
             SceneManager.LoadScene(1, LoadSceneMode.Single);
 
         }
         else if (string.Equals(action, "menu", StringComparison.OrdinalIgnoreCase))
         {
-            yield return fadeScript.FadeIn(0.5f);
+            yield return fadeScript.FadeIn(0.1f);
             SceneManager.LoadScene(0, LoadSceneMode.Single);
         }
     }

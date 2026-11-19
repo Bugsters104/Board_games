@@ -23,7 +23,7 @@ public class FadeScript : MonoBehaviour
             tempColor = img.color;
             tempColor.a = a;
             img.color = tempColor;
-            yield return new WaitForSeconds(fadeTime);
+            yield return new WaitForSecondsRealtime(fadeTime); //!!!
         }
        img.raycastTarget = false;
     }
@@ -36,7 +36,7 @@ public class FadeScript : MonoBehaviour
             tempColor = img.color;
             tempColor.a = a;
             img.color = tempColor;
-            yield return new WaitForSeconds(fadeTime);
+            yield return new WaitForSecondsRealtime(fadeTime); //!!!
         }
         img.raycastTarget = false;
     }
